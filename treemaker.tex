@@ -1,0 +1,25 @@
+\documentclass{standalone}
+
+%\usepackage{commands}
+
+\newcommand{\sbs}[1]{$_{#1}$}
+
+\usepackage{fontspec}
+\setmainfont{Linux Biolinum O}
+
+\usepackage[normalem]{ulem}
+
+\usepackage{tikz}
+\usepackage{tikz-qtree-compat}
+
+\usepackage{pgfmath}
+
+\usepackage{pifont}
+
+\begin{document}
+\begin{tikzpicture}[baseline]
+\Tree [.A 1 [.B 2 [.C 3 [D. 4 [.E F G ]]]]]
+\end{tikzpicture}
+
+
+\end{document}
