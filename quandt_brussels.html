@@ -61,16 +61,364 @@
   <h1>Introduction</h1>
   </section>
   <section class="slide level2"> <h2>The case for UG</h2>
-  <p>Some text</p>
-  <p>Some more text</p>
+    <ul>
+      <li>What is the case for a 'Universal Grammar'?</li>
+      <ul>
+        <li>Something that cannot be learned.</li>
+        <li>Famous argument: poverty of the stimulus.</li>
+      </ul>
+    </ul>
   </section>
-  <section class="slide level2"> <h2>A Tree</h2>
+
+  <section class="slide level2"> <h2>Tree</h2>
   <div class="mermaid">
-    graph TD
-      A --- B
+  graph TD
+  classDef empty fill:#ffffff,stroke-width:0px;
+  A --- B
+  A --- C
+  class A,B,C empty</div>
+  </section>
+  </section>
+
+  <section>
+  <section class="title-slide slide level1">
+  <h1>Suppletion</h1>
+  </section>
+  <section class="slide level2"> <h2>What is Suppletion?</h2>
+  <ul>
+    <li>Most basically <span class=italic>suppletion</span> refers to the following </li>
+    <ul>
+      <li>A lexical item has two or more forms.</li>
+      <li>The forms are phonologically unrelated.</li>
+      <li>Use determined by <span class=italic>morphological</span> context.</li>
+    </ul>
+    <li>Examples:</li>
+    <ul>
+      <p class="ex"><span class=italic>person~people</span></p>
+      <li>*<span class=italic>persons</span>, change determined by plurality</li>
+      <p class="ex"><span class=italic>gut~besser~(am) besten</span></p>
+      <li><span class=italic>*guter, am gutsten</span>, changed determined by comparative, superlative</li>
+    </ul>
+  </ul>
+  </section>
+  <section class="slide level2"> <h2>Suppletion</h2>
+    <ul>
+      <li>Suppletion is the very definition of irregular patterns.</li>
+      <li>As such, it makes a good testing ground for UG.</li>
+      <li>The extent to which patterns can be learned tells us...</li>
+    </ul>
+  </section>
+  <section class="slide level2"> <h2>Adjectival Suppletion</h2>
+  <ul>
+    <li>Bobaljik (2012) looks at patterns of suppletion in adjectives, for comparative and superlative degrees.</li>
+  </ul>
+  <p style="margin-bottom:1em;"></p>
+  <table>
+    <thead>
+      <th>Positive</th>
+      <th>Comparative</th>
+      <th>Superlative</th>
+      <th>Pattern</th>
+    </thead>
+    <tbody>
+    <tr>
+      <td>smart</td>
+      <td>smarter</td>
+      <td>smartest</td>
+      <td>AAA</td>
+    </tr>
+    <tr>
+      <td>good</td>
+      <td>better</td>
+      <td>best</td>
+      <td>ABB</td>
+    </tr>
+    <tr>
+      <td>bonus</td>
+      <td>melior</td>
+      <td>optimus</td>
+      <td>ABC</td>
+    </tr>
+    </tbody>
+  </table>
+  </section>
+<section class="slide level2"> <h2>Missing Patterns</h2>
+<ul>
+  <li>But, there are two patterns that are <span class=italic>not attested</span>:</li>
+</ul>
+<p style="margin-bottom:1em;"></p>
+<table>
+  <thead>
+    <th>Positive</th>
+    <th>Comparative</th>
+    <th>Superlative</th>
+    <th>Pattern</th>
+  </thead>
+  <tbody>
+    <tr>
+      <td>good</td>
+      <td>better</td>
+      <td>goodest</td>
+      <td>ABA</td>
+    </tr>
+    <tr>
+      <td>good</td>
+      <td>gooder</td>
+      <td>best</td>
+      <td>AAB</td>
+    </tr>
+  </tbody>
+</table>
+<p style="margin-bottom:1em;"></p>
+<ul>
+  <li>Generalisations:</li>
+  <ul>
+    <li>If the comparative is suppletive, the superlative is also suppletive.</li>
+    <li>For the superlative to be suppletive, then comparative must also be.</li>
+  </ul>
+</ul>
+</section>
+<section class="slide level2"> <h2>Robustness</h2>
+  <ul>
+    <li>How robust is this?</li>
+    <ul>
+      <li>Very.</li>
+      <li>Data drawn from over 300 languages, representing 40+ families.</li>
+      <li>Total dataset = 100 distinct cognate triples</li>
+      <li>The use of <span class=italic>cognate triples</span> ensures that English <span class=italic>good~better~best</span> and Dutch <span class=italic>goed~beter~best</span> are treated as the same data point.</li>
+    </ul>
+  </ul>
+</section>
+<section class="slide level2"> <h2>Explanation</h2>
+<ul>
+  <li>ABA and AAB are logically possible patterns.</li>
+  <li>There is no <span class=italic>a priori</span> reason why they shouldn't exist.</li>
+  <li>The patterns are clearly learnable, so why do they not arise?</li>
+</ul>
+</section>
+<section class="slide level2"> <h2>Explanation</h2>
+<ul>
+  <li>Bobaljik proposes the following, couched within UG.</li>
+  <ul>
+    <li></li>
+  </ul>
+</ul>
+</section>
+  </section>
+
+<section>
+<section class="title-slide slide level1">
+<h1>Pronominal case</h1>
+</section>
+<section class="slide level2"> <h2>Morphological Case</h2>
+<ul>
+  <li>Roughly speaking, <span class=italic>case</span> encodes the roles that items play in sentences.</li>
+  <li>In German, usually:</li>
+  <ul>
+    <li>Nominative = subject</li>
+    <li>Accusative = (direct) object</li>
+    <li>Dative = goal/indirect object</li>
+  </ul>
+<li>Case has been argued to be complex, in a manner akin to what Bobaljik proposes for adjective gradation (Caha 2009).</li>
+</ul>
+</section>
+<section class="slide level2"> <h2>Bulding the survey</h2>
+<ul>
+  <li>We looked for patterns suppletion for case in pronouns (<span class=italic>we~us</span>).</li>
+  <li>In order to be instructive, languages need to show 3+ case distinctions.</li>
+  <li>We ordered the cases on a hierarchy following Marantz (1991):</li>
+  <ul>
+    <li><span class="sc">Nominative--Accusative--Dative</span></li>
+    <li><span class="sc">Absolutive--Ergative--Dative</span></li>
+    <li>Since this doesn't matter, I'll use Case 1, Case 2, Case 3</li>
+  </ul>
+</ul>
+</section>
+<section class="slide level2"> <h2>Findings: Summary</h2>
+<table>
+  <thead>
+    <th>Pattern</th>
+    <th><span class=italic>n </span>attested</th>
+    <th>Example</th>
+  </thead>
+  <tbody>
+    <tr>
+      <td>AAA</td>
+      <td>numerous</td>
+      <td>Lezgian</td>
+    </tr>
+    <tr>
+      <td>ABB</td>
+      <td>57</td>
+      <td>Indo-European</td>
+    </tr>
+    <tr>
+      <td>ABC</td>
+      <td>2</td>
+      <td>Khinalugh</td>
+    </tr>
+    <tr>
+      <td>AAB</td>
+      <td>10</td>
+      <td>Hunzib</td>
+    </tr>
+    <tr>
+      <td>ABA</td>
+      <td>---</td>
+      <td>---</td>
+    </tr>
+  </tbody>
+</table>
+</section>
+<section class="slide level2"> <h2>AAA</h2>
+<table>
+  <thead>
+    <td>Case 1</td>
+    <td>Case 2</td>
+    <td>Case 3</td>
+    <td>Language</td>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+</section>
+
+<section class="slide level2"> <h2>Explanation</h2>
+  <div class="container">
+    <div class="col">
+      <ul>
+        <li>We propose that cases are contained within another, like with gradation.</li>
+        <li>More complex cases like <span class="sc">Dative</span> contain less context cases like <span class="sc">Accusative</span>, which in turn contain cases like <span class="sc">nominative</span>.</li>
+      </ul>
     </div>
-  </section>
-  </section>
+    <div class="col">
+        <div class="mermaid">
+        graph TD
+        classDef empty fill:#ffffff,stroke-width:0px;
+        A[DP] --- B[b]
+        A --- C[Case 3]
+        B --- D[a]
+        B --- E[Case 2]
+        D --- F[Base]
+        D --- G[Case 1]
+        class A,B,C,D,E,F,G empty</div>
+    </div>
+  </div>
+</section>
+
+<section class="slide level2">
+<h2>Supporting Evidence</h2>
+<ul>
+  <li>There are instances where we can see transparent case containment.</li>
+</ul>
+<p class="whitespace"></p>
+<table>
+  <caption>Khanty transparent case containment</caption>
+  <thead>
+    <th></th>
+    <th><span class="sc">Nominative</span></th>
+    <th><span class="sc">Accusative</span></th>
+    <th><span class="sc">Dative</span></th>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="sc">1sg</span></td>
+      <td>ma</td>
+      <td>ma:-<span class="boldface">ne:m</span></td>
+      <td>ma:-<span class="boldface">ne:m</span>-na</td>
+    </tr>
+    <tr>
+      <td><span class="sc">3sg</span></td>
+      <td>luw</td>
+      <td>luw-<span class="boldface">e:l</span></td>
+      <td>luw-<span class="boldface">e:l</span>-na</td>
+    </tr>
+    <tr>
+      <td><span class="sc">1pl</span></td>
+      <td>muŋ</td>
+      <td>muŋ-<span class="boldface">-e:w</span></td>
+      <td>muŋ-<span class="boldface">e:w</span>-na</td>
+    </tr>
+  </tbody>
+</table>
+<p class="whitespace"></p>
+<ul>
+  <li><span class="boldface">Caveat</span>: these are few and far between.</li>
+</ul>
+</section>
+
+</section>
+
+<section>
+<section class="title-slide slide level1">
+<h1>Pronominal Number</h1>
+</section>
+<section class="slide level2"> <h2>Number</h2>
+<ul>
+  <li>We further tested this against morphological number</li>
+  <li>Again, (at least) a three-way number distinction is necessary</li>
+  <li>Concentrate on <span class="sc">singular---plural---dual</span></li>
+  <ul>
+    <li>singular = one entity</li>
+    <li>dual = two entities</li>
+    <li>plural = more than two entities</li>
+  </ul>
+</ul>
+</section>
+<section class="slide level2"> <h2>Findings: Summary</h2>
+<table>
+  <thead>
+    <th>Pattern</th>
+    <th><span class=italic>n </span> attested</th>
+    <th>Example</th>
+  </thead>
+  <tbody>
+    <tr>
+      <td>AAA</td>
+      <td>numerous</td>
+      <td>Mapuche</td>
+    </tr>
+    <tr>
+      <td>ABB</td>
+      <td>48</td>
+      <td>Kayardild</td>
+    </tr>
+    <tr>
+      <td>ABC</td>
+      <td>19</td>
+      <td>Savosavo</td>
+    </tr>
+    <tr>
+      <td>AAB</td>
+      <td>3</td>
+      <td>Wambaya</td>
+    </tr>
+    <tr>
+      <td>ABA</td>
+      <td>---</td>
+      <td>---</td>
+    </tr>
+  </tbody>
+</table>
+</section>
+</section>
+
+<section>
+<section class="title-slide slide level1">
+<h1>General Discussion</h1>
+</section>
+
+<section class="slide level2">
+<h2>Consequences</h2>
+<ul>
+  <li>What does any of this mean?</li>
+</ul>
+</section>
+
+</section>
 
   <script src="js/reveal.js"></script>
 
