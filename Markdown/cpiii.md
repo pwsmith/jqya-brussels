@@ -1,5 +1,0 @@
-﻿Hello
-
----
-
-Sömethiŋ here
