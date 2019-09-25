@@ -196,13 +196,33 @@
   <li>The patterns are clearly learnable, so why do they not arise?</li>
 </ul>
 </section>
-<section class="slide level2"> <h2>Explanation</h2>
-<ul>
-  <li>Bobaljik proposes the following, couched within UG.</li>
-  <ul>
-    <li></li>
-  </ul>
-</ul>
+<section class="slide level2"> <h2>Explanation: Bobaljik</h2>
+  <div class="container">
+    <div class="col">
+        <ul>
+          <li>Adjective, Comparative and Superlative are in a containment relation.</li>
+          <li>The superlative cannot appear without the comparative.</li>
+          <li>The comparative does not appear with comparative</li>
+          <li>The adjective does not need either.</li>
+          <li>if Sup ---> Comp</li>
+        </ul>
+    </div>
+    <div class="col">
+      <div class="mermaid">
+        graph TD
+        classDef empty fill:#ffffff,stroke-width:0px;
+          A --- B
+          A --- C[Superlative]
+          B --- D
+          B --- E[Comparative]
+          D --- F[Root]
+          D --- G[a]
+          class A,B,C,D,E,F,G empty;
+      </div>
+    </div>
+  </div>
+
+
 </section>
   </section>
 
@@ -431,11 +451,12 @@
  </ul>
 
 </section>
-
-
 </section>
 
-  <script src="js/reveal.js"></script>
+
+
+  
+<script src="js/reveal.js"></script>
 
   <script>
 
@@ -450,12 +471,20 @@
         center: false,
         // Transition speed
         transitionSpeed: 'slow', // default/fast/slow
+        viewDistance: 200,
+        menu: {
+          themes: 
+            [
+              { name: 'Sof', theme: 'css/theme/sof.css'},
+            ]
+        },
 
         // Optional reveal.js plugins
         dependencies: [
           { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
           { src: 'plugin/zoom-js/zoom.js', async: true },
-          { src: 'plugin/notes/notes.js', async: true }
+          { src: 'plugin/notes/notes.js', async: true },
+          { src: 'node_modules/reveal.js-menu/menu.js' },
         ]
       });
     </script>
