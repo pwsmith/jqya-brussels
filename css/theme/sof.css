@@ -320,7 +320,7 @@ flex: none;
   word-wrap: normal; }
 
 .reveal table {
-  margin-left: 1em;
+  /* margin-left: 1em; */
   border-collapse: collapse;
   border-spacing: 0;
   caption-side: bottom;
@@ -457,6 +457,18 @@ Multiple column
 
 .col {
   flex: 1;
+}
+
+.colgrow {
+  flex: 2;
+}
+
+div.mermaid {
+  /* font-family: 'trebuchet ms', verdana, arial; */
+  /* font-family: 'Courier New', Courier, monospace !important; */
+  text-align: center;
+  line-height: 75%;
+  font-size: 0.5em;
 }
 
 .whitespace {

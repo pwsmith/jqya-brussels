@@ -17,13 +17,7 @@
       div.column{display: inline-block; vertical-align: top; width: 50%;}
   </style>
   <style>
-      div.mermaid {
-        /* font-family: 'trebuchet ms', verdana, arial; */
-        /* font-family: 'Courier New', Courier, monospace !important; */
-        text-align: center;
-        line-height: 75%;
-        font-size: 0.5em;
-      }
+      
   </style>
   <link rel="stylesheet" href="css/theme/sof.css" id="theme">
   <!-- Printing and PDF exports -->
@@ -189,7 +183,7 @@
     </ul>
   </ul>
 </section>
-<section class="slide level2"> <h2>Explanation</h2>
+<section class="slide level2"> <h2>Summary</h2>
 <ul>
   <li>ABA and AAB are logically possible patterns.</li>
   <li>There is no <span class=italic>a priori</span> reason why they shouldn't exist.</li>
@@ -202,9 +196,7 @@
         <ul>
           <li>Adjective, Comparative and Superlative are in a containment relation.</li>
           <li>The superlative cannot appear without the comparative.</li>
-          <li>The comparative does not appear with comparative</li>
-          <li>The adjective does not need either.</li>
-          <li>if Sup ---> Comp</li>
+          <li>Sup → Comp</li>
         </ul>
     </div>
     <div class="col">
@@ -215,14 +207,115 @@
           A --- C[Superlative]
           B --- D
           B --- E[Comparative]
-          D --- F[Root]
+          D --- F["#8730;Root"]
           D --- G[a]
           class A,B,C,D,E,F,G empty;
       </div>
     </div>
   </div>
+</section>
 
+<section>
+<h2>Supporting Evidence</h2>
+<ul>
+  <li>Some languages do show this containment overtly</li>
+  <p class='whitespace'></p>
+</ul>
+<table>
+  <caption>Transparent containment in superlatives</caption>
+  <thead>
+    <th>Adjective</th>
+    <th>Comparative</th>
+    <th>Superlative</th>
+    <th>Language</th>
+  </thead>
+  <tbody>
+    <tr>
+      <td>mlad-ý</td>
+      <td>mlad-<span class='boldface'>ši</span></td>
+      <td>nej-mlad-<span class='boldface'>ši</span></td>
+      <td>Czech</td>
+    </tr>
+    <tr>
+      <td>nagy</td>
+      <td>nagy-<span class='boldface'>obb</span></td>
+      <td style="font-size: 0.8em;">leg-nagy-<span class='boldface'>obb</span></td>
+      <td>Hungarian</td>
+    </tr>
+    <tr>
+      <td>nüs°ə</td>
+      <td><span class='boldface'>c̨ 'a</span>-nüs°-ə</td>
+      <td style='font-size: 0.8em;'>a-<span class='boldface'>c̨ 'a</span>-nüs°-ə</td>
+      <td>Ubykh</td>
+    </tr>
+  </tbody>
+</table>
+</section>
+<section>
+<h2>Bobaljik: Assumptions</h2>
+<ul>
+  <li>Elements are initially abstract features.</li>
+  <li>Features are replaced by phonological exponents.</li>
+  <li>Rules apply according to how specific they are.</li>
+  <li>Examples:</li>
+</ul>
+  <div class='container'>
+    <div class='colgrow'>
+        <ul>
+          <ul>
+            <li>√<span class='sc'>cat</span> ⇔ /kæt/</li>
+            <li>√<span class='sc'>pl</span> ⇔ /-z/</li>
+            <li>√<span class='sc'>person</span> ⇔ /pə:sən/</li>
+            <li>√<span class='sc'>person</span> ⇔ /pe:pəl/ / __ [<span class='sc'>pl</span>] </li>
+          </ul>
+        </ul>
+    </div>
+    <div class='col'>
+      <div class='container'>
+        <div class='col'>
+            <div class='mermaid'>
+                graph TD
+                classDef empty fill:#ffffff,stroke-width:0px;
+                  NP --- B["#8730;"PERSON]
+                  NP --- C[PL]
+                class A,B,C,D,E,F,G,NP empty;
+              </div>
+        </div>
+        <div class='col'>
+            <p>=<span class='italic'>people</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
+<section>
+<h2>Bobaljik Explanation</h2>
+<ul>
+  <li>Superlative > Comparative: if the comparative is suppletive, then so must the superlative be.</li>
+  <li>There is no way for the default rule to apply to the superlative.</li>
+</ul>
+<div class='container'>
+  <div class='colgrow'>
+    <ul>
+      <li>√<span class='sc'>good</span> ⇔ good</li>
+      <li>√<span class='sc'>good</span> ⇔ be(t)- __ / [<span class='sc'>comp</span>]</li>
+      <li>√<span class='sc'>comp</span> ⇔ -er</li>
+      <li>√<span class='sc'>sprl</span> ⇔ -st</li>
+    </ul>
+  </div>
+  <div class='col'>
+    <div class='mermaid'>
+      graph TD
+      classDef empty fill:#ffffff,stroke-width:0px;
+        A --- B
+        A --- C[SPRL]
+        B --- D["#8730;GOOD"]
+        B --- E[COMP]
+      class A,B,C,D,E,F,G empty;
+    </div>
+  </div>
+</div>
 </section>
   </section>
 
@@ -293,10 +386,10 @@
 <section class="slide level2"> <h2>AAA</h2>
 <table>
   <thead>
-    <td>Case 1</td>
-    <td>Case 2</td>
-    <td>Case 3</td>
-    <td>Language</td>
+    <th>Case 1</th>
+    <th>Case 2</th>
+    <th>Case 3</th>
+    <th>Language</th>
   </thead>
   <tbody>
     <tr>
@@ -306,6 +399,82 @@
 </table>
 </section>
 
+
+<section>
+<h2>ABB Patterns</h2>
+<table>
+  <caption>ABB patterns in case</caption>
+  <thead>
+    <th>Case 1</th>
+    <th>Case 2</th>
+    <th>Case 3</th>
+    <th>Language</th>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ol</td>
+      <td>anɨ</td>
+      <td>aɣaa</td>
+      <td>Khakas</td>
+    </tr>
+    <tr>
+      <td>mə</td>
+      <td>dibi</td>
+      <td>du-</td>
+      <td>Hunzib</td>
+    </tr>
+    <tr>
+      <td>àʔàŋ</td>
+      <td>nkàtí</td>
+      <td>kàtí</td>
+      <td>Kadugli</td>
+    </tr>
+      <td>ʔa</td>
+      <td>wit</td>
+      <td>witib</td>
+      <td>Pomo (SE)</td>
+  </tbody>
+</table>
+</section>
+
+<section>
+<h2>ABC Patterns</h2>
+<table>
+  <caption>ABC patterns in case</caption>
+  <thead>
+    <th>Case 1</th>
+    <th>Case 2</th>
+    <th>Case 3</th>
+    <th>Language</th>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ajo</td>
+      <td>(a)të</td>
+      <td>asaj</td>
+      <td>Albanian</td>
+    </tr>
+    <tr>
+      <td>zɨ</td>
+      <td>jä</td>
+      <td>as(ɨr)</td>
+      <td>Khinalugh</td>
+    </tr>
+  </tbody>
+</table>
+</section>
+
+<section>
+<h2>AAB Patterns</h2>
+<table>
+  <thead>
+    <th>Case 1</th>
+    <th>Case 2</th>
+    <th>Case 3</th>
+    <th>Language</th>
+  </thead>
+</table>
+</section>
 <section class="slide level2"> <h2>Explanation</h2>
   <div class="container">
     <div class="col">
